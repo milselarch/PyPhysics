@@ -1,0 +1,80 @@
+{
+        'settings':{
+            'chunk-x': 65
+            ,'chunk-y': 65
+            ,'bounds': (16,9)
+            ,'interval':10
+            ,'cheakDelay':4
+            ,'damper':0.01
+            ,'lag': 1 #0.02 #1 #0.025
+            ,'__DEBUG__':False
+            ,'fps': 60 #104 #61
+            ,'bg':'white'
+            },
+        'pens': {
+            'object1':{
+                'length':100,'breath':15
+                ,'mass':11,'colour':'#679ec1'
+                ,'x':500,'y':300,'vx':-50,'vy':-15
+                ,'fx':lambda t:0,'fy':lambda t:0 #t*0.15
+                ,'a':16,'va':0.2,'fa':lambda t:0 #t**0.5
+                ,'e':1
+                },
+            'derpy':{
+                'length':80,'breath':20
+                ,'mass':12,'colour':'#f5d564'
+                ,'x':300,'y':400,'vx':100,'vy':15*4
+                ,'fx':lambda t:0 #t #**0.5
+                ,'fy':lambda t:0 #-t**0.1
+                ,'a':222,'va':12,'fa':lambda t:0 #-t**0.3+2
+                ,'e':1
+                },
+            'test':{
+                'length':90,'breath':16 # 27
+                ,'mass':27,'colour':'#79e0bb'
+                ,'x':600,'y':200,'vx':-17,'vy':-41
+                ,'fx':lambda t:0,'fy':lambda t:0
+                ,'a':172,'va':-12,'fa':lambda t:0
+                ,'e':1
+                },
+            'bugs':{
+                'length':80,'breath':170
+                ,'mass':22,'colour':'#d93d3d'
+                ,'x':600,'y':400,'vx':100,'vy':-70
+                ,'fx':lambda t:0,'fy':lambda t:0
+                #lambda t:10
+                ,'a':60,'va':0,'fa':lambda t:0
+                ,'e':1
+                },
+            'blob':{
+                'length':120,'breath':17
+                ,'mass':23,'colour':'#bcbea6'
+                ,'x':200,'y':400,'vx':200,'vy':-88
+                #-188 #-80 #-20 #-88
+                ,'fx':lambda t:0,'fy':lambda t:0
+                #lambda t:100
+                ,'a':60,'va':12,'fa':lambda t:0
+                ,'e':1
+                },	
+	'blobette':{
+                'length':100,'breath':19
+                ,'mass':23,'colour':'#dcbea6'
+                ,'x':400,'y':450,'vx':140,'vy':-48
+                #-188 #-80 #-20 #-88
+                ,'fx':lambda t:0,'fy':lambda t:0
+                #lambda t:100
+                ,'a':162,'va':17,'fa':lambda t:0
+                ,'e':1
+	},
+	'robocraft':{
+                'length':102,'breath':22
+                ,'mass':55,'colour':'#b6e5a8'
+                ,'x':100,'y':250,'vx':140,'vy':-148
+                #-188 #-80 #-20 #-88
+                ,'fx':lambda t:0,'fy':lambda t:0
+                #lambda t:100
+                ,'a':162,'va':170,'fa':lambda t:0
+                ,'e':1
+	}
+            }
+        }

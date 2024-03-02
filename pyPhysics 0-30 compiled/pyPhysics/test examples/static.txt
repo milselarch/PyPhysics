@@ -1,0 +1,23 @@
+{
+        'settings':{
+            'chunk-x': 65
+            ,'chunk-y': 65
+            ,'bounds': (16,9)
+            ,'interval':10
+            ,'cheakDelay':5
+            ,'damper':0.01
+            ,'lag': 1 #0.05
+            ,'fps': 60 #104 #61
+            ,'bg':'white'
+            },
+        'pens': {
+            'object1':{
+                'length':100,'breath':50
+                ,'mass':11,'colour':'#679ec1'
+                ,'x':500,'y':300,'vx':0,'vy':0
+                ,'fx':lambda t:0,'fy':lambda t:0 #t*0.15
+                ,'a':0,'va':0,'fa':lambda t:0 #t**0.5
+                ,'e':1
+                }
+            }
+        }

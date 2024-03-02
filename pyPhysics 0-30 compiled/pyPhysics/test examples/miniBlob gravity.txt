@@ -1,0 +1,49 @@
+{
+        'settings':{
+            'chunk-x': 65
+            ,'chunk-y': 65
+            ,'bounds': (16,9)
+            ,'interval':10
+            ,'cheakDelay':5
+            ,'damper':0.01
+            ,'fps': 60 #104 #61
+            ,'bg':'white'
+            },
+        'pens': {
+            'object1':{
+                'length':100,'breath':15
+                ,'mass':11,'colour':'#679ec1'
+                ,'x':300,'y':440,'vx':152,'vy':-35
+                ,'fx':lambda t:0,'fy':lambda t:t #t*0.15
+                ,'a':66,'va':22,'fa':lambda t:0 #t**0.5
+                ,'e':1
+                },
+            'derpy':{
+                'length':80,'breath':20
+                ,'mass':12,'colour':'#f5d564'
+                ,'x':390,'y':200,'vx':187,'vy':15
+                ,'fx':lambda t:0 #t #**0.5
+                ,'fy':lambda t:t #-t**0.1
+                ,'a':72,'va':31,'fa':lambda t:0 #-t**0.3+2
+                ,'e':1
+                },
+	'muffin':{
+                'length':90,'breath':25
+                ,'mass':15,'colour':'#f5e564'
+                ,'x':490,'y':100,'vx':187,'vy':15
+                ,'fx':lambda t:0 #t #**0.5
+                ,'fy':lambda t:t #-t**0.1
+                ,'a':72,'va':31,'fa':lambda t:0 #-t**0.3+2
+                ,'e':1
+                },
+	'rainbow dash':{
+                'length':120,'breath':15
+                ,'mass':2,'colour':'#b5e064'
+                ,'x':600,'y':350,'vx':187,'vy':15
+                ,'fx':lambda t:0 #t #**0.5
+                ,'fy':lambda t:-10*t #-t**0.1
+                ,'a':72,'va':31,'fa':lambda t:0 #-t**0.3+2
+                ,'e':1
+                }
+            }
+        }
